@@ -1,0 +1,98 @@
+/*
+Taken from https://gist.github.com/CodeMyUI/2ffebda488210486f9bc0f3a52d04abe
+Modified to fit my needs. 
+*/
+
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+@import url("https://fonts.googleapis.com/css?family=Quicksand");
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+#social_media {
+  list-style: none;
+  position: fixed;
+  top: 50%;
+  left: -3%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: 100;
+}
+#social_media li a {
+  display: block;
+  margin-left: -2px;
+  height: 60px;
+  width: 60px;
+  border-radius: 0 25px 25px 0;
+  border: 2px solid #000;
+  background: #FFF;
+  margin-bottom: 1em;
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
+  color: #2980b9;
+  text-decoration: none;
+  line-height: 60px;
+  position: relative;
+}
+#social_media li a:hover {
+  cursor: pointer;
+  width: 180px;
+  color: #fff;
+}
+#social_media li a:hover span {
+  left: 0;
+}
+#social_media li a span {
+  padding: 0 30px 0 15px;
+  position: absolute;
+  left: -120px;
+  -webkit-transition: left .4s ease;
+  transition: left .4s ease;
+}
+#social_media li a i {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  font-size: 1.5em;
+}
+#social_media li .spotify {
+  background: rgba(39, 174, 96, 0.1);
+  border-color: #27ae60;
+  color: #27ae60;
+}
+#social_media li .spotify:hover {
+  background: #27ae60;
+}
+#social_media li .soundcloud {
+  background: rgba(230, 126, 34, 0.1);
+  border-color: #e67e22;
+  color: #e67e22;
+}
+#social_media li .soundcloud:hover {
+  background: #e67e22;
+}
+#social_media li .skype {
+  background: rgba(34, 167, 240, 0.1);
+  border-color: #22A7F0;
+  color: #22A7F0;
+}
+#social_media li .skype:hover {
+  background: #22a7f0;
+}
+#social_media li .dribbble {
+  background: rgba(210, 82, 127, 0.1);
+  border-color: #D2527F;
+  color: #D2527F;
+}
+#social_media li .dribbble:hover {
+  background: #d2527f;
+}
+
+/* entypo */
+[class*="entypo-"]:before {
+  font-family: 'entypo', sans-serif;
+}
