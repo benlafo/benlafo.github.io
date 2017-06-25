@@ -1,3 +1,8 @@
+
+/*	BL_Dark_Blue: #193d6c;
+	BL_Ligh_Blue: #65c9dd;
+*/
+
 @font-face {
 	font-family: Arvo;
 	src: url("../fonts/Arvo/Arvo-Regular.ttf");
@@ -12,6 +17,38 @@
 	font-style: normal;
 }
 
-#name {
+/*#name {
 	font-family: Josefin-Slab, Sans-Serif;
+}*/
+
+
+/* 
+progress bar taken from https://codepen.io/k33k00/pen/ByeyVB
+*/
+.progressContainer {
+  left:0;
+  width: 100%;
+  height: 0.4em;
+  margin-bottom: 0px;
+  position: fixed;
+  bottom: 0px;
+  overflow: hidden;
+  background-color: white;
+  content: "";
+  display: table;
+  table-layout: fixed;
+  z-index: 100;
+}
+
+.progressBar {
+  width: 0%;
+  float: left;
+  height: 100%;
+  z-index:99;
+  max-width: 100%;
+  background-color: #65c9dd;
+  -webkit-transition: width .6s ease;
+  -o-transition: width .6s ease;
+  transition: width .6s ease;
+  z-index: 100;
 }
