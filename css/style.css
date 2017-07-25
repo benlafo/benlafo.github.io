@@ -494,6 +494,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 #about .about-title {
   color: #333;
   font-size: 28px;
+  font-weight: 700;
 }
 
 #about .about-text {
