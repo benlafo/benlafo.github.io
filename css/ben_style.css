@@ -17,35 +17,6 @@
 	font-style: normal;
 }
 
-#content {
-  background: #fff;
-  padding: 80px 0;
-}
-
-#content .content-container {
-  background: url(../img/medshare-about.png) left top no-repeat;
-  background-size: 22%;
-}
-
-#content .content-content {
-  background: #fff;
-}
-
-#content .content-title {
-  color: #333;
-  font-weight: 700;
-  font-size: 28px;
-}
-
-#content .content-text {
-  line-height: 26px;
-}
-
-#content .content-text:last-child {
-  margin-bottom: 0;
-}
-
-
 /* 
 progress bar taken from https://codepen.io/k33k00/pen/ByeyVB
 */
