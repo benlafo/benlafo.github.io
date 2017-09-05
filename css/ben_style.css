@@ -47,3 +47,15 @@ progress bar taken from https://codepen.io/k33k00/pen/ByeyVB
   transition: width .6s ease;
   z-index: 100;
 }
+
+.myYolkSlides {
+	width: 100%;
+}
+
+.factbookSlides {
+	height: 10%;
+}
+
+
+
+
