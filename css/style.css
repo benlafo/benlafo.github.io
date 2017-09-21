@@ -483,8 +483,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #about .about-container {
-  background: url(../img/big_ben.jpg) left top no-repeat;
-  background-size: 22%;
+  background: url(../img/me.jpg) left top no-repeat;
+  background-size: 65%;
 }
 
 #about .about-content {
