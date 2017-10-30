@@ -56,6 +56,22 @@ progress bar taken from https://codepen.io/k33k00/pen/ByeyVB
 	width: 100%;
 }
 
+span.step {
+  background: #cccccc;
+  border-radius: 0.8em;
+  -moz-border-radius: 0.8em;
+  -webkit-border-radius: 0.8em;
+  color: #ffffff;
+  display: inline-block;
+  font-weight: bold;
+  line-height: 1.6em;
+  margin-right: 5px;
+  text-align: center;
+  width: 1.6em; 
+  float: left;
+}
 
-
-
+.stepText {
+  padding-left: 25%;
+  padding-right: 25%;
+}
