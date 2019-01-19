@@ -505,6 +505,11 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin-bottom: 0;
 }
 
+#about .process-container {
+  background: url(../img/IM_Tutorial1.GIF) left top no-repeat;
+  background-size: 15%;
+}
+
 
 /* Portfolio Section
 --------------------------------*/
