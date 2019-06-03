@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Chat UI Upgrade | Ben LaForge</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+    
+  <!-- Facebook Opengraph integration: https://developers.facebook.com/docs/sharing/opengraph -->
+  <meta property="og:title" content="">
+  <meta property="og:image" content="">
+  <meta property="og:url" content="">
+  <meta property="og:site_name" content="">
+  <meta property="og:description" content="">
+  
+  <!-- Twitter Cards integration: https://dev.twitter.com/cards/  -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="">
+  <meta name="twitter:title" content="">
+  <meta name="twitter:description" content="">
+  <meta name="twitter:image" content="">
+  
+  <!-- Place your favicon.ico and apple-touch-icon.png in the template root directory -->
+  <link href="favicon.ico" rel="shortcut icon">
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet"> 
+  
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/animate-css/animate.min.css" rel="stylesheet">
+  
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+
+  <!-- Social Media Stylesheet File -->
+  <link href="css/social_media.css" rel="stylesheet">
+
+  <!-- Ben Personal Style -->
+  <link href="css/ben_style.css" rel="stylesheet">
+  
+<!-- =======================================================
+  Theme Name: Imperial
+  Theme URL: https://bootstrapmade.com/imperial-free-onepage-bootstrap-theme/
+  Author: BootstrapMade.com
+  Author URL: https://bootstrapmade.com
+======================================================= -->
+</head>
+
+<body>
+  <div id="preloader"></div>
+
+<!--==========================
+  Floating Social Icons
+============================-->
+ <!--  <ul id="social_media">
+    <li>
+      <a href="https://open.spotify.com/user/125747451" class="spotify"><span>Spotify</span><i class="entypo-spotify"></i></a>
+    </li>
+    <li>
+      <a href="#" class="soundcloud"><span>Soundcloud</span><i class="entypo-soundcloud"></i></a>
+    </li>
+    <li>
+      <a href="#" class="skype"><span>Skype</span><i class="entypo-skype"></i></a>
+    </li>
+    <li>
+      <a href="#" class="dribbble"><span>Dribbble</span><i class="entypo-dribbble"></i></a>
+    </li>
+  </ul> -->
+
+<!--==========================
+  Progress Bar
+============================-->
+  <div class="progressContainer">
+    <div class="progressBar">
+
+    </div>
+  </div>
+  
+<!--==========================
+  Header Section
+============================-->
+  <header id="header">
+    <div class="container">
+    
+      <div id="logo" class="pull-left">
+        <a href="index.html"><img src="img/logo.png" alt="" title="" /></img></a>
+        <!-- Uncomment below if you prefer to use a text image -->
+        <!--<h1><a href="#hero">Header 1</a></h1>-->
+      </div>
+        
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li><a href="index.html#hero">Home</a></li>
+          <li><a href="index.html#about">Bio</a></li>
+          <li><a href="index.html#portfolio">Portfolio</a></li>
+          <li><a href="index.html#contact">Contact Me</a></li>
+        </ul>
+      </nav><!-- #nav-menu-container -->
+    </div>
+  </header><!-- #header -->
+
+<!--==========================
+  Content Section
+============================-->
+<section id="about">
+    <div class="container wow">
+      <div class="row">
+        <div class="col-md-12">
+          <h3 class="section-title">Chat UI Upgrade</h3>
+          <h3 class="section-description">Design Process Overview</h6>
+          <div class="section-title-divider"></div>
+          <p class="section-description"><b>Deliverable:</b> Wireframes
+                                          <br><b>Programs:</b> Axure RP 8</p>
+        </div>
+      </div>
+    </div>
+    <div class="row stepText">
+      <div class="content-content">
+        <img src="img/ChatUICover.png" alt="img01" class="img-responsive" />
+      </div>
+    </div>
+    <br>
+    <br>
+    <div class="container content-container wow">
+      <div class="row stepText">
+        <div class="content-content">
+          <p class="content-text">
+            Our chat system was clearly outdated visually, but on top of that there was opportunity for a better user experience with regards to error handling, space conservation, and information chunking. 
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="container content-container wow">
+      <div class="row stepText">
+        <div class="content-content">
+          <h3>
+    		The Problem
+       	  </h3>
+          <div class="row stepText">
+            <div class="content-content">
+              <img src="img/WebChatUIOld.png" alt="img01" class="img-responsive" />
+            </div>
+            <div class="content-content">
+              <img src="img/iOSChatUIOld.png" alt="img01" class="img-responsive" style="width: 50%"/>
+            </div>
+          </div>
+          <p class="content-text">
+          	The Ingenious Med application includes HIPAA compliant messaging between users, but the experience using it is so bad that it hardly gets any use. It was assigned to me to add some new functionality to the chat system (the ability to delete a thread), but I decided to give the whole system a facelift. I noticed several problems with our current implementation: 
+          </p>
+          <ul>
+            <li>UI looked outdated</li>
+            <li>Too few chat bubbles were visible at once</li>
+            <li>Every message included a timestamp, cluttering the screen</li>
+            <li>Messages did not appear to be linked together, even if they were sent seconds apart</li>
+            <li>Errors were not easily identifiable</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="container content-container wow">
+      <div class="row stepText">
+        <div class="content-content">
+          <h3>
+    		Discovery
+       	  </h3>
+          <p class="content-text">
+          	I spent a lot of time investigating several popular messaging systems, like Messenger, iMessage, and What's App. I compared interactions between all of them, noting when they agreed and when they chose their own solutions for things like error handling and time stamp visibility. I also looked up several HIPAA compliant chat systems to see how they compared to both ours and to the popular ones. 
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="container content-container wow">
+      <div class="row stepText">
+        <div class="content-content">
+          <h3>
+    		Design
+       	  </h3>
+          <p class="content-text">
+          	Design started with new chat bubbles. I wanted to group chat messages by timing so that continuous thoughts would appear connected, and I wanted to update the look and feel. Because chat bubbles are the heart and soul of the messaging system, it was the optimal place to start. Having rounded edges allows us to have clear and defined outward edges, but by having hard corners between messages they all appear as a single block. I incorporated timing logic in my designs for when to group messages and when to start a new block. 
+          </p>
+          <p class="content-text">
+            I then moved on to including all the secondary information, like the sending user's name, the time stamp, and any potential errors. I wanted to move to a more consolidated UI for these items, to reduce distractionary signals and keep the focus on the messages. For the users' names in a group chat, I moved to their initials and confined them in a circle by their message. But I also incorporated the grouping logic above and only showed initials for the last message in a group. For time stamps, I didn't want to get rid of any functionality that we currently offered, but I did want to reduce clutter. To achieve this, I created another timing rule that after ten minutes of inactivity we would show a time stamp, and for all other messages the time stamp would be available on tap/click of that message bubble. Errors would be shown under the message they affect, similar to the other systems I investigated in discovery. 
+          </p>
+          <div class="row stepText">
+            <div class="content-content">
+              <img src="img/WebChatUINew.png" alt="img01" class="img-responsive" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container content-container wow">
+      <div class="row stepText">
+        <div class="content-content">
+          <h3>
+    		Delivery
+       	  </h3>
+		      <p class="content-text">
+		  	   This enhancement ended up being more valuable to our mobile users than web, so it was prioritized higher. I have designs for all systems, but to date it has only been implemented on iOS and Android. Our primary users are physicians, and they use mobile more than web. Our web platform is more heavily used by our administrative users. 
+          </p>
+          <div class="row stepText">
+            <div class="content-content">
+              <img src="img/iOSChatUINew.png" alt="img01" class="img-responsive" style="width: 50%"/>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+          
+          
+          
+<!--==========================
+  Footer Section
+============================-->
+  <footer id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            
+          </div>
+        </div>
+      </div>
+  </footer><!-- #footer -->
+  
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+    
+  <!-- Required JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+  <script src="lib/superfish/hoverIntent.js"></script>
+  <script src="lib/superfish/superfish.min.js"></script>
+  <script src="lib/morphext/morphext.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/stickyjs/sticky.js"></script>
+  <script src="lib/easing/easing.js"></script>
+  
+  <!-- Template Specisifc Custom Javascript File -->
+  <script src="js/custom.js"></script>
+  
+  <script src="contactform/contactform.js"></script>
+
+  <!-- Ben's Custom Javascript File -->
+  <script src="js/ben_js.js"></script>
+  
+    
+</body>
+</html>

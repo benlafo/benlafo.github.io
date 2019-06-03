@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Ingenious Med Application Onboarding | Ben LaForge</title>
+  <title>Charge Summary Dashboard | Ben LaForge</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta content="" name="keywords">
   <meta content="" name="description">
@@ -111,19 +111,26 @@
     <div class="container wow">
       <div class="row">
         <div class="col-md-12">
-          <h3 class="section-title">Ingenious Med Application Onboarding</h3>
+          <h3 class="section-title">Charge Summary Dashboard</h3>
           <h3 class="section-description">Design Process Overview</h6>
           <div class="section-title-divider"></div>
-          <p class="section-description"><b>Deliverable:</b> Tutorial Screen Images
-                                          <br><b>Programs:</b> Adobe Illustrator, Adobe After Effects, Adobe Photoshop</p>
+          <p class="section-description"><b>Deliverable:</b> Wireframes
+                                          <br><b>Programs:</b> Axure RP 8</p>
         </div>
       </div>
     </div>
+    <div class="row stepText">
+      <div class="content-content">
+        <img src="img/ChargeSummaryDashboard.png" alt="New Dashboard" class="img-responsive" style="width: 100%" />
+      </div>
+    </div>
+    <br>
+    <br>
     <div class="container content-container wow">
       <div class="row stepText">
         <div class="content-content">
           <p class="content-text">
-            I was assigned the project to replace the current tutorial screens in our application. I was given the current image files and Illustrator files of iOS and Android devices to use. 
+            Ingenious Med has a data analytics tool called Analyze, which provides interactive reports to our administrative users. One of these reports is called the Charge Summary Report, which I was tasked with updating. 
           </p>
         </div>
       </div>
@@ -134,14 +141,14 @@
           <h3>
     		The Problem
        	  </h3>
+          <div class="content-content">
+           <img src="img/ChargeSummaryDashboard-Old.png" alt="Old Dashboard" class="img-responsive" style="width: 100%" />
+          </div>
           <p class="content-text">
-          	Our application has a lot going on, and it can be hard to navigate without knowing what you're doing. This isn't a layperson application; it's a business tool for physicians. As such, the company has an implementations team that attempts to train first time users when they purchase our license. The issue is that many more users will end up using our app than those who were there at that training. 
-		  </p>
+          	There were several layers of information hierarchy to work through, as well as additional requirements for what dashboard needed to include. The current version of the dashboard attempted to show four categories of data per view, with different views based on what level the data was coming from (Enterprise, Group, Site, or Individual User). This proved ineffective as many of the options were hidden behind a "Filters" button and the graphs were too small, requiring a "Remaining Sites..." option below each. 
+          </p>
           <p class="content-text">
-          	To accomodate this, our application has a series of tutorial slides that appear when a user logs in for the first time. These images are meant to explain how to use the application with text and screenshots. Long story short, they failed to do their job. 
-		  </p>
-          <p class="content-text">
-          	Our company was spending too much on training for first time users, and our current tutorials didn't seem to help. In fact, they generated more customer requests to be able to skip them, which was functionality we did not offer. All in all, they did more harm then good, but rather than get rid of them, we wanted to fix them. 
+            My main goal was to reduce the levels of hierarchy, bringing more information to the forefront while still reducing clutter. 
           </p>
         </div>
       </div>
@@ -153,37 +160,7 @@
     		Discovery
        	  </h3>
           <p class="content-text">
-          	I began by researching best practices for mobile application onboarding. Mobile onboarding has been around in many forms for a long time, and as such there is a lot of research out there already. Because of this, and taking into account our team's resources, there wasn't a need to conduct our own research process for this project when there were enough studies out there. 
-          </p>
-          <p class="content-text">
-            I learned a lot in my research, including what type of information should be included, the number of slides, good design approaches, how many words, and that tutorial slides are not a good solution to onboarding. At that point, I had to weigh the options - should I design a better version of a suboptimal solution or design a completely revamped onboarding process? But based on both the timeline I was given and the limited dev resources given to this initiative, the sliding images was the smartest option. 
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="container content-container process-container wow">
-      <div class="row stepText">
-        <div class="content-content">
-          <h3>
-    		Design
-       	  </h3>
-          <p class="content-text">
-          	I focused on four main things in my deisgn: 
-          </p>
-          <ul>
-          	<li>Updated Design</li>
-          	<li>More Relevant Content</li>
-          	<li>Better Context</li>
-          	<li>Better Interactivity</li>
-          </ul>
-          <p class="content-text">
-          	My first target was locking down what content was to be included, ulitlizing the research I had done to add, subtract, and modify the current content. Part of the research I did actually distinguished between tutorial screens and app store screenshots. They provide similar yet different information to very different users - the former is for users who have committed to using our application, and the latter is for people who are searching for our application. Because of this, I decided to account for both of these in this project. 
-          </p>
-		  <p class="content-text">
-          After that, I started messing with the UI. This gives me a more visual starting point for the interaction design afterwards. With an initual UI update created, I started brainstorming ways to improve the context - how to get the users to draw a line between the words on the screen and the screenshot below. I went through multiple iterations of this design, even bringing a potential winner in front of a group of executives who were interested in the outcome, but all those options fell below the mark. This caused me to think outside the box, deciding to give animation at try. This solution appeared to solve the issue, as I could directly point to the relevent aspects of the UI for the action I was describing, as well as show the user the outcome of that action. 
-          </p>
-		  <p class="content-text">
-          The only drawback was that animated images are very large. My inital attempt was shot down by the mobile dev manager for size restraints, which started me down a long journey of learning about image compression. I was eventually able to decrease the size of the gifs enough to work with the constraints given by dev, and at that point interactivity was the name of the game. I asked dev to enhance the swiping, add a skip button, and add a swipe down to dismiss option. 
+          	During the discovery phase, I investigated the dashboard and its many options. I wrote down all the different views, filters, sorts, and actions so that I could reorganize them later. I also started investigation dashboard designs that other applications and sites were using to see what practices they use for displaying several layers and options. 
           </p>
         </div>
       </div>
@@ -192,27 +169,34 @@
       <div class="row stepText">
         <div class="content-content">
           <h3>
-    		Phase Two and Beyond
+    		Design
        	  </h3>
-		  <p class="content-text">
-		  	I started this project understanding that sliding tutorial screens were not the optimal solution, and by the end the company was on board to get a third party onboarding solution. The company decided on Pendo, a company whose product would provide us with analytics as well as the ability to push messages in-app to our users. By utilizing Pendo, we could replace tutorial screens with in-app tooltip walkthroughs, and even segment those walkthroughs to have certain steps for certain users based on analytics. 
+          <p class="content-text">
+          	Once I had all the required elements written out and a repetoir of potential design elements, I began sketching ways that I could combine them all. I started with the graphs because they are the purpose of the dashboard, but they couldn't show enough data when they were as small as they were. I changed the view to only show one graph at a time with controls at the top to change the view to the other metrics. This allows for more detail to be shown in the graphs but hides data from the other metrics. To compensate, I included metrics from the current time period in the controls, so that a user has some knowledge of how they're perfoming without having to click anything. 
           </p>
           <p class="content-text">
-          	Once we got access to Pendo, I designed all of the guide templates using HTML/CSS/JavaScript. I worked closely with our implementations team, teaching them how to use the templates I created in the Pendo Editor and creating special templates to fit their desires for help workflows. The content was mostly out of my hands at this point, but I remained a consultant of sorts for those on this project on the implementations side. 
-          </p>
-          <p class="content-text">
-          	At this point in time, we have not yet committed to keeping Pendo based on unforseen complications, but we hope to continue to improve our onboarding process. 
+            The filters in the old version contained time selectors as well as data selectors. I chose to separate those by containing the time selectors and the graph in a panel, while grouping the view selectors (which I dubbed "Organize By") and data filters in a left hand column. Now having brought all selectors to the main page, I wanted to bring in the raw data. I did so by including another panel below the graph for tabular data. To populate it, a user would click on a bar in the graph to see the data that it contains. The graph also had an excel export option, something asked for by our users. 
           </p>
         </div>
       </div>
     </div>
+    <div class="container content-container wow">
       <div class="row stepText">
         <div class="content-content">
-          <img src="img/IM_AppStore.png" alt="img01" class="img-responsive" />
+          <h3>
+    		Delivery
+       	  </h3>
+		      <p class="content-text">
+		  	   The hardest part of this project was the compromise that happened when development started working on it. Everyone was excited about the design, but I heard over and over "we can't build that." The team was building this in a tool called MicroStrategy, not in web code. I didn't fully understand the technical constraints of their program, and that proved to be an issue. I spent some time working with the dev team, figuring out what they could and couldn't do. A good example is that the time selectors could not be free text - they could only display the range that was selected by the controls to the left. 
+          </p>
+          <p class="content-text">
+            After working with the team during their sprint, we came out with a product that was definitely the best dashboard in our analytics tool. 
+          </p>
         </div>
       </div>
+    </div>
   </section>
-
+  <br>
           
           
           

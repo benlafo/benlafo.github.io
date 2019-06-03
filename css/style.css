@@ -36,6 +36,12 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0;
 }
 
+.side-by-side {
+  float: left;
+  width: 50%;
+  padding: 5px;
+}
+
 /* Prelaoder */
 #preloader {
   position: fixed;
@@ -505,10 +511,10 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin-bottom: 0;
 }
 
-#about .process-container {
+/*#about .process-container {
   background: url(../img/IM_Tutorial1.GIF) left top no-repeat;
   background-size: 15%;
-}
+}*/
 
 
 /* Portfolio Section
