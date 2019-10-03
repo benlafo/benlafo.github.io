@@ -75,3 +75,51 @@ span.step {
   padding-left: 12.5%;
   padding-right: 12.5%;
 }
+
+.textLeft {
+  width: 30%; 
+  display: inline-block; 
+  float: left; 
+  padding-right: 2em;
+}
+
+.imageRight {
+  width: 70%; 
+  display: inline-block;
+}
+
+.imageLeft {
+  width: 70%; 
+  display: inline-block; 
+  float: left; 
+  padding-right: 2em;
+}
+
+.textRight {
+  width: 30%; 
+  display: inline-block;
+  text-align: left;
+}
+
+.imageStack {
+  padding-bottom: 2em;
+}
+
+.imageGrid {
+  display: grid;
+  grid-gap: 1rem;
+}
+
+.processTitleLeft {
+  font-size: 3.5em;
+  text-align: left;
+  padding: 10pt;
+  padding-top: 40pt;
+}
+
+.processTitleRight {
+  font-size: 3.5em;
+  text-align: right;
+  padding: 10pt;
+  padding-top: 40pt;
+}

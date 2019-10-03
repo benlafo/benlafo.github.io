@@ -43,6 +43,9 @@
   <!-- Ben Personal Style -->
   <link href="css/ben_style.css" rel="stylesheet">
   
+  <!-- W3 Stylesheet -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
 <!-- =======================================================
   Theme Name: Imperial
   Theme URL: https://bootstrapmade.com/imperial-free-onepage-bootstrap-theme/
@@ -115,70 +118,49 @@
           <h3 class="section-description">Design Process Overview</h6>
           <div class="section-title-divider"></div>
           <p class="section-description"><b>Deliverable:</b> Wireframes
-                                          <br><b>Programs:</b> Axure RP 8</p>
+                                          <br><b>Programs:</b> Sketch, Axure RP 8/9</p>
         </div>
       </div>
     </div>
     <div class="container content-container wow">
-      <div class="row stepText">
+      <div class="row">
         <div class="content-content">
-          <p class="content-text">
-            OneBill is our internal name for a complete overhaul of our primary billing workflow - the bread and butter of our application. This project was a collaboration between both members of the UX team. 
-          </p>
-          <p class="content-text">
-            <b>Note: Out of respect for the company, I will not be showing images of this project since this is our primary user workflow and the most important part of our app.</b>
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="container content-container wow">
-      <div class="row stepText">
-        <div class="content-content">
-          <h3>
+          <h3 class="processTitleLeft">
     		The Problem
        	  </h3>
-          <p class="content-text">
-          	Our system is first and foremost a way for physicians to create charges for their patient encounters, but we have two different workflow options that have some similar and some different capabilities. We want to consolidate both workflows into one, merging all capabilities but reducing clutter. This project is such a large effort that we divided it into four major feature projects that could be delivered separately. 
+          <p class="content-text textLeft">
+          	The Ingenious Med (IM) charge capture platform has two distinct workflows: New Bill and New Superbill. They both do the same thing (create a charge) but one is more geared towards hospitalists and one is more for specialists. Maintaining two workflows causes technical problems, and they’re both so old they need to be rebuilt anyway. Rather than updating these two distinct workflows to accomplish the same task, the goal is to combine the two feature sets into one workflow - OneBill. 
           </p>
+          <img src="img/New Bill.png" alt="img01" class="img-responsive imageRight" />
         </div>
       </div>
     </div>
     <div class="container content-container wow">
-      <div class="row stepText">
+      <div class="row">
         <div class="content-content">
-          <h3>
+          <h3 class="processTitleRight">
     		Discovery
        	  </h3>
-          <p class="content-text">
-          	Admittedly, my boss was given this project for the first two features and did most of the discovery research while I focused on other projects. However, I was given this project for features three and four (we are in the design phase for feature three, which we call E&M Handling). My discovery for this project has been mostly internal. Because this feature is about incorporating current functionality from one of our workflows into the new one (along with a few enhancements), my research has been largely working with the current version of our application. The areas that I have had to do outside research have been regarding best practices for handling workflows with multiple dialogs. 
+          <img src="img/OneBillProcess.jpg" alt="img01" class="img-responsive imageLeft" />
+          <p class="content-text textRight">
+          	I began by researching the current state of each of the two workflows, documenting the feature sets and user flows for each. I found the overlap of the two flows and created a tentative combined flow that would be the basis for the design. A predecessor on my team had come up with OneBill concepts, and I was provided those as a starting point for design. I took those concepts in front of users and gathered feedback about the pros and cons. I learned that users want to only see what they need to see. I also learned that “New Bill” users are adamant that they want everything on one screen, whereas “New Superbill” users are fine with multiple screens. 
           </p>
         </div>
       </div>
     </div>
     <div class="container content-container wow">
-      <div class="row stepText">
+      <div class="row">
         <div class="content-content">
-          <h3>
+          <h3 class="processTitleLeft">
     		Design
        	  </h3>
-          <p class="content-text">
-          	Phase three of this project was originally my boss's, and as such I was given in-progress designs when the project transitioned to me. It was interesting working with her designs because I was not working with complete creative freedom. I had to work my ideas into a foundation that was already approved and somewhat developed. This isn't unlike most of my projects working with our current app, but normally when the current implementation hinders my design I get to change it. When I'm working with in-development design that hinders my project, I don't get to change it. 
-          </p>
-          <p class="content-text">
-            The part of my boss's design that hindered mine was the fact that she made most of the workflow in a dialog box. There are several layers of hierarchy in this workflow, and to have only the second level in a dialog was a huge hindrance to displaying what were historically dialogs, since I know better than to display dialogs on top of dialogs. But that's what had to happen. We have a tool that helps our physicians calulate the correct service level, and they access that tool from the "Add Procedure" screen (the dialog in question). I chose to have this tool display as a dialog over the previous screen because of the amount of time spent on both of the dialogs. The two dialogs don't appear one after the other, and both are intentionally opened by the user. 
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="container content-container wow">
-      <div class="row stepText">
-        <div class="content-content">
-          <h3>
-    		Delivery
-       	  </h3>
-		      <p class="content-text">
-		  	   This project is nearing development, but before then I need to conduct usability testing and heuristic evaluations. Product Management wants hard and fast numbers that prove to our clients that the new workflow will improve their physicians' performance. Everyone is a little antsy about such a big change to our main workflow, but I know the UX team will be able to provide proof of our design's efficiency by the end of the summer. 
-          </p>
+          <div class="content-content">
+            <p class="content-text textLeft">
+          	 My manager and I set up a design working session to turn the old concepts into a workable design. In that session, we altered the concepts to align with the flow I created during discovery, but didn’t get far into the functionality of the UI. My next steps were to add functionality to limit the view by persona. The Ingenious Med application can’t tell if a user is a hospitalist or specialist, so we can’t determine whether they prefer New Bill or New Superbill. I tried dividing the functionality of OneBill into distinct cards so that I could add functionality to each. I wanted to give users the option to hide or pin certain elements in order to customize their view, but after testing I found that that was too much autonomy for our users. I ended up deciding to utilize the selected “Bill Template” to determine which view to show the user. That way, if a New Bill user has a template with solely New Bill functionality, they would see a view that resembles what they are accustomed to (but better). Using the template as a source of truth helped me get around the issue that the IM application can’t tell what persona a user is. 
+            </p>
+            <img src="img/OneBillPrototype.png" alt="img01" class="img-responsive imageRight" />
+          </div>
+          <img src="img/BillSummaryFinal.png" alt="img01" class="img-responsive" />
         </div>
       </div>
     </div>
